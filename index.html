@@ -1,34 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>ABC College</title>
-<link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8">
+    <title>A.M.J College</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #002147;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #003366;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1') no-repeat center center/cover;
+            height: 350px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .course-card {
+            flex: 1 1 30%;
+            background: #e6f0ff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        footer {
+            background: #002147;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .courses {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
 <body>
 
-<header>
-<h1>ABC College</h1>
-<p>Welcome to Our Official Website</p>
-</header>
+    <header>
+        <h1> A.M.Jain College</h1>
+        <p>Empowering Education for a Better Future</p>
+    </header>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="courses.html">Courses</a>
-<a href="admissions.html">Admissions</a>
-<a href="contact.html">Contact</a>
-</nav>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-<section>
-<h2>Welcome</h2>
-<p>ABC College provides quality education and modern learning facilities.</p>
+    <div class="hero">
+        <h1>Welcome to A.M.Jain College</h1>
+    </div>
 
-<button onclick="location.href='admissions.html'">
-Apply Now
-</button>
+    <div class="container">
 
-</section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                 A.M.Jain College was established in 1990 with the mission to provide quality education 
+                and foster innovation. We offer undergraduate and postgraduate programs across 
+                various disciplines.
+            </p>
+        </section>
+
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <div class="courses">
+                <div class="course-card">
+                    <h3>Bachelor of Science</h3>
+                    <p>Specializations in Physics, Chemistry, Mathematics.</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>Bachelor of Commerce</h3>
+                    <p>Accounting, Finance, Business Management.</p>
+                </div>
+
+                <div class="course-card">
+                    <h3>Bachelor of Arts</h3>
+                    <p>English, History, Political Science.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="admissions">
+            <h2>Admissions</h2>
+            <p>
+                Admissions are open for the 2025 academic year. 
+                Apply online through our official portal or visit the campus admission office.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@amjcollege.edu</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 College Road, City, Country</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AMJ College. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
