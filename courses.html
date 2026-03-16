@@ -1,28 +1,155 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Courses</title>
-<link rel="stylesheet" href="style.css">
+<title>Courses - ABC College</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background-color:#f4f6f9;
+}
+
+header{
+    background-color:#002147;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    background-color:#004080;
+    padding:12px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+.container{
+    width:85%;
+    margin:auto;
+    margin-top:30px;
+}
+
+h2{
+    text-align:center;
+    color:#002147;
+}
+
+.course-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    margin-top:30px;
+}
+
+.course-box{
+    background:white;
+    width:260px;
+    padding:20px;
+    margin:15px;
+    border-radius:8px;
+    text-align:center;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.course-box h3{
+    color:#004080;
+}
+
+.course-box p{
+    font-size:14px;
+    line-height:1.5;
+}
+
+button{
+    padding:8px 15px;
+    margin-top:10px;
+    border:none;
+    background:#004080;
+    color:white;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#002147;
+}
+
+footer{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h1>Our Courses</h1>
+<header>
+<h1>ABC College</h1>
+<p>Our Academic Programs</p>
+</header>
 
 <nav>
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="courses.html">Courses</a>
-<a href="admissions.html">Admissions</a>
 <a href="contact.html">Contact</a>
 </nav>
 
-<ul>
-<li>Bachelor of Computer Science</li>
-<li>Bachelor of Business Administration</li>
-<li>Bachelor of Engineering</li>
-<li>Master of Computer Applications</li>
-</ul>
+<div class="container">
+
+<h2>Courses Offered</h2>
+
+<div class="course-container">
+
+<div class="course-box">
+<h3>Bachelor of Computer Science</h3>
+<p>Focuses on programming, software development, artificial intelligence and data science.</p>
+<button>Learn More</button>
+</div>
+
+<div class="course-box">
+<h3>Bachelor of Business Administration</h3>
+<p>Provides knowledge in management, finance, marketing and entrepreneurship.</p>
+<button>Learn More</button>
+</div>
+
+<div class="course-box">
+<h3>Bachelor of Commerce</h3>
+<p>Covers accounting, taxation, business law and financial management.</p>
+<button>Learn More</button>
+</div>
+
+<div class="course-box">
+<h3>Bachelor of Arts</h3>
+<p>Includes subjects like history, literature, sociology and political science.</p>
+<button>Learn More</button>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 ABC College | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
