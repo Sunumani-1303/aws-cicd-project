@@ -1,13 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Admissions</title>
-<link rel="stylesheet" href="style.css">
+<title>Admissions - ABC College</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background-color:#f4f6f9;
+}
+
+header{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    background:#004080;
+    padding:12px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+.container{
+    width:60%;
+    margin:auto;
+    margin-top:30px;
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    text-align:center;
+    color:#002147;
+}
+
+form{
+    margin-top:20px;
+}
+
+label{
+    font-weight:bold;
+}
+
+input, select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border-radius:4px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#004080;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#002147;
+}
+
+footer{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h1>Admissions</h1>
+<header>
+<h1>ABC College</h1>
+<p>Admissions Portal</p>
+</header>
 
 <nav>
 <a href="index.html">Home</a>
@@ -17,13 +110,41 @@
 <a href="contact.html">Contact</a>
 </nav>
 
-<p>Admissions are open for the academic year 2026.</p>
+<div class="container">
 
-<p>Students can apply online through the admission portal.</p>
+<h2>Admission Application Form</h2>
 
-<button onclick="location.href='contact.html'">
-Contact Admission Office
-</button>
+<form>
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name">
+
+<label>Email</label>
+<input type="email" placeholder="Enter your email">
+
+<label>Phone Number</label>
+<input type="text" placeholder="Enter your phone number">
+
+<label>Select Course</label>
+<select>
+<option>Bachelor of Computer Science</option>
+<option>Bachelor of Business Administration</option>
+<option>Bachelor of Commerce</option>
+<option>Bachelor of Arts</option>
+</select>
+
+<label>Address</label>
+<input type="text" placeholder="Enter your address">
+
+<button type="submit">Apply Now</button>
+
+</form>
+
+</div>
+
+<footer>
+<p>© 2026 ABC College | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
